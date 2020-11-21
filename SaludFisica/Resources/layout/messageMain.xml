@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:id="@+id/messagesMain"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:showIn="@layout/app_bar_main"
+    android:background="@android:color/holo_blue_light">
+
+    <TextView
+        android:text="MENSAJES"
+        android:textSize="40dp"
+        android:textAlignment="center"
+        android:textColor="?android:attr/colorPrimaryDark"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:id="@+id/titleMessages" />
+    <Spinner
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:background="@android:color/white"
+            android:layout_centerHorizontal="true"
+            android:textAlignment="center"
+            android:id="@+id/messagesSelectionSP"
+            android:layout_below="@+id/titleMessages"/>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="400dp"
+        android:layout_below="@+id/messagesSelectionSP"
+        android:id="@+id/messagesMainScroll">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <ListView
+                android:layout_width="match_parent"
+                android:layout_centerHorizontal="true"
+                android:layout_height="400dp"
+                android:id="@+id/listMessages"
+                android:textAlignment="center"/>
+        </LinearLayout>
+    </ScrollView>
+    <Button
+        android:text="Nuevo Mensaje"
+        android:textSize="20dp"
+        android:layout_alignParentRight="true"
+        android:background="@drawable/buttonStyle"
+        android:layout_margin="10dp"
+        android:layout_width="250dp"
+        android:onClick="newDiets"
+        android:layout_height="wrap_content"
+        android:id="@+id/newMessageButton"
+        android:layout_below="@+id/messagesMainScroll"/>
+
+</RelativeLayout>

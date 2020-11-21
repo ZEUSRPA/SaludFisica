@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/welcomePage"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:showIn="@layout/app_bar_main"
+    android:background="@android:color/holo_blue_light">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:textColor="?android:attr/colorPrimaryDark"
+        android:textSize="40dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="Salud Fisica" 
+        android:id="@+id/principalText"/>
+    <ImageView
+        android:id="@+id/imageViewWelcome"
+        android:layout_width="wrap_content"
+        android:layout_gravity="center"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/principalText"
+        android:src="@drawable/logo"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:textColor="?android:attr/colorSecondary"
+        android:textSize="20dp"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:text="Bienvenido a Salud Fisica" 
+        android:id="@+id/secondaryText"
+        android:layout_below="@+id/imageViewWelcome"/>
+
+    <Button
+            android:text="Iniciar Sesion"
+            android:textSize="20dp"
+            android:layout_width="200dp"
+            android:onClick="setLoginView"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:id="@+id/setLoginButton" 
+            android:layout_below="@+id/secondaryText"
+        android:layout_margin="30dp"
+            android:background="@drawable/buttonStyle"/>
+</RelativeLayout>

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:id="@+id/dietsMain"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:showIn="@layout/app_bar_main"
+    android:background="@android:color/holo_blue_light">
+    
+    <TextView
+        android:text="RUTINAS"
+        android:textSize="40dp"
+        android:textAlignment="center"
+        android:textColor="?android:attr/colorPrimaryDark"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:id="@+id/titleRutinas" />
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="400dp"
+        android:layout_below="@+id/titleRutinas"
+        android:id="@+id/rutinesMainScroll">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <ListView
+                android:layout_width="match_parent"
+                android:layout_centerHorizontal="true"
+                android:layout_height="400dp"
+                android:id="@+id/listRutines"
+                android:textAlignment="center"/>
+        </LinearLayout>
+    </ScrollView>
+    <Button
+        android:text="Nueva Rutina"
+        android:textSize="20dp"
+        android:layout_alignParentRight="true"
+        android:background="@drawable/buttonStyle"
+        android:layout_margin="10dp"
+        android:layout_width="250dp"
+        android:onClick="newRutines"
+        android:layout_height="wrap_content"
+        android:id="@+id/newRutineButton" 
+        android:layout_below="@+id/rutinesMainScroll"/>
+        
+</RelativeLayout>

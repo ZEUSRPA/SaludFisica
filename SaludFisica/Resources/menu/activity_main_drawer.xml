@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/menu_principal"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single" android:id="@+id/groupMenu">
+        <item
+         
+            android:id="@+id/nav_login"
+            android:icon="@drawable/ic_menu_camera"
+            android:title="Iniciar Sesión" />
+        <item
+            android:id="@+id/nav_user"
+            android:icon="@drawable/ic_menu_gallery"
+            android:title="Usuario" />
+        <item
+            android:id="@+id/nav_pacientes"
+            android:icon="@drawable/ic_menu_slideshow"
+            android:title="Pacientes" />
+      <item
+            android:id="@+id/nav_dietas"
+            android:icon="@drawable/ic_menu_slideshow"
+            android:title="Dietas" />
+      <item
+            android:id="@+id/nav_rutinas"
+            android:icon="@drawable/ic_menu_slideshow"
+            android:title="Rutinas de Ejercicio" />
+      <item
+            android:id="@+id/nav_activityRegister"
+            android:icon="@drawable/ic_menu_slideshow"
+            android:title="Registro de Actividad" />
+      <item
+            android:id="@+id/nav_mensajes"
+            android:icon="@drawable/ic_menu_slideshow"
+            android:title="Mensajes" />
+      <item
+            android:id="@+id/nav_reporte"
+            android:icon="@drawable/ic_menu_slideshow"
+            android:title="Reporte" />
+      
+        <item
+            android:id="@+id/nav_logout"
+            android:icon="@drawable/ic_menu_manage"
+            android:title="Cerrar Sesión" />
+    </group>
+
+    <item android:title="Communicate" android:id="@+id/itemUno">
+        <menu android:id="@+id/menuDOs">
+            <item
+                android:id="@+id/nav_developers"
+                android:icon="@drawable/ic_menu_share"
+                android:title="Desarrolladores" />
+            <!--<item
+                android:id="@+id/nav_send"
+                android:icon="@drawable/ic_menu_send"
+                android:title="Send" />-->
+        </menu>
+    </item>
+
+</menu>

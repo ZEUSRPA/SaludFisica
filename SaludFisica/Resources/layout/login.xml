@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/login_page"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:showIn="@layout/app_bar_main"
+    android:background="@android:color/holo_blue_light">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true">
+
+        <TextView
+            android:text="INICIAR SESIÓN"
+            android:textSize="40dp"
+            android:textAlignment="center"
+            android:textColor="?android:attr/colorPrimaryDark"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/title" />
+        <EditText
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:textSize="20dp"
+            android:hint="Nombre de usuario"
+            android:outlineAmbientShadowColor="@android:color/black"
+            android:layout_centerHorizontal="true"
+            android:minWidth="25px"
+            android:minHeight="25px"
+            android:layout_margin="10dp"
+            android:id="@+id/username" 
+            android:textAlignment="center"
+            android:transitionName="edit"
+            android:layout_below="@id/title"
+            android:background="@drawable/editTextStyle"/>
+        <EditText
+            android:inputType="textPassword"
+            android:textSize="20dp"
+            android:layout_width="300dp"
+            android:hint="Clave"
+            android:textAlignment="center"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_margin="10dp"
+            android:id="@+id/password" 
+            android:layout_below="@+id/username"
+            android:background="@drawable/editTextStyle"/>
+        <Button
+            android:text="Ingresar"
+            android:textSize="20dp"
+            android:layout_width="200dp"
+            android:onClick="Ingresar"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:id="@+id/ingresar_button" 
+            android:layout_below="@+id/password"
+            android:background="@drawable/buttonStyle"/>
+        
+    </RelativeLayout>
+</RelativeLayout>
